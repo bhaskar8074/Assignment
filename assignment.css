@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.app-container {
+    background-color: #F11663;
+    padding: 20px;
+    min-height: 100%;
+    color: #111663;
+}
+
+.user-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-container {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #111663;
+    border-radius: 50%;
+}
+
+.name-adress-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid #111663;
+}
+
+.name {
+
+    font-size: 20px;
+}
+
+.role {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 767px) {
+    .profile-name-container {
+        margin-right: 50px;
+    }
+
+    .user-details-container {
+        flex-direction: row;
+    }
+
+    .name-adress-container {
+        flex-direction: row;
+    }
+
+    .name-container {
+        padding-right: 25px;
+        width: 50%;
+        border-right: 4px solid #111663;
+    }
+
+    .details-container {
+        padding-left: 15px;
+    }
+
+}
+
+.work-section {
+
+    padding-top: 25px;
+}
+
+.work-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-duration-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.duration {
+    margin-right: 60px;
+}
+
+.work-details-container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    border-bottom: 4px solid #111663;
+}
+
+@media screen and (min-width: 767px) {
+    .work-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .work-duration-container {
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-start;
+    }
+
+    .duration {
+        margin-right: 60px;
+    }
+}
+
+.skill-rating-container {
+    display: flex;
+    align-items: center;
+}
+
+.ratting-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ratting {
+    height: 15px;
+    width: 15px;
+    background-color: #111663;
+    border-radius: 50%;
+}
+
+.skill {
+    width: 150px;
+}
+
+.skills-awards-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 4px solid #111663;
+}
+
+.skills-awards-section {
+    padding: 10px;
+}
+
+.skills-container {
+    padding-right: 10px;
+    border-bottom: 1px solid #111663;
+}
+
+@media screen and (min-width: 767px) {
+    .skills-awards-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .skills-awards-container {
+        flex-direction: row;
+        flex-grow: 1;
+    }
+
+    .skills-container {
+        padding-right: 10px;
+        border-right: 4px solid #111663;
+    }
+}
+
+.interests-section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.interests-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 4px solid #111663;
+}
+
+.interest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.interest-logo {
+    display: flex;
+    justify-content: center;
+    color: #F11663;
+    align-items: center;
+    background-color: #111663;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 767px) {
+    .interests-section {
+        flex-direction: row;
+    }
+
+    .interests-container {
+        gap: 40px;
+    }
+}
+
+.education-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-duration-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.clg-name {
+    font-weight: 540;
+    font-family: Roboto;
+    font-size: 14px;
+
+}
+
+@media screen and (min-width : 767px) {
+    .education-section {
+        flex-direction: row;
+    }
+}

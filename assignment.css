@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 .app-container {
-    background-color: #F11663;
+    background-color: #fba3ab;
     padding: 20px;
     min-height: 100%;
     color: #111663;
@@ -10,11 +10,11 @@
 .user-details-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .profile-name-container {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,6 +31,7 @@
 }
 
 .name-adress-container {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     border-bottom: 4px solid #111663;
@@ -60,8 +61,8 @@
 
     .name-container {
         padding-right: 25px;
-        width: 50%;
         border-right: 4px solid #111663;
+        width: 50%;
     }
 
     .details-container {
@@ -107,10 +108,11 @@
         display: flex;
         flex-grow: 1;
         align-items: flex-start;
+        border-bottom: 1px solid #111663;
     }
 
     .duration {
-        margin-right: 60px;
+        margin-right: 40%;
     }
 }
 
@@ -142,13 +144,22 @@
     border-bottom: 4px solid #111663;
 }
 
-.skills-awards-section {
-    padding: 10px;
-}
+
 
 .skills-container {
     padding-right: 10px;
     border-bottom: 1px solid #111663;
+}
+
+.awards-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.award-year {
+    margin-left: 10px;
+    margin-right: auto;
 }
 
 @media screen and (min-width: 767px) {
@@ -165,7 +176,12 @@
 
     .skills-container {
         padding-right: 10px;
+        width: 50%;
         border-right: 4px solid #111663;
+    }
+
+    .award-year {
+        margin-right: auto;
     }
 }
 
@@ -180,6 +196,8 @@
 .interests-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     flex-wrap: wrap;
     width: 100%;
@@ -196,7 +214,7 @@
 .interest-logo {
     display: flex;
     justify-content: center;
-    color: #F11663;
+    color: #fba3ab;
     align-items: center;
     background-color: #111663;
     height: 90px;
@@ -227,6 +245,7 @@
 .education-duration-container {
     display: flex;
     align-items: flex-start;
+    flex-grow: 1;
 }
 
 .clg-name {
